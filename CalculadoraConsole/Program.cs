@@ -67,7 +67,7 @@ class Program
             string? resposta = Console.ReadLine();
             continuar = resposta?.Trim().ToLower() == "s";
 
-            Console.Clear();
+            try { Console.Clear(); } catch (IOException) { }
         }
 
         Console.WriteLine("Obrigado por usar a Calculadora C# .NET. Até logo!");
@@ -127,6 +127,6 @@ class Program
     {
         Console.WriteLine("Pressione Enter para tentar novamente...");
         Console.ReadLine();
-        Console.Clear();
+        try { Console.Clear(); } catch (IOException) { }
     }
 }
