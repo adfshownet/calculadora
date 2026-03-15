@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Executar Calculadora",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/CalculadoraConsole/bin/Debug/net10.0/CalculadoraConsole.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/CalculadoraConsole",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        }
+    ]
+}
